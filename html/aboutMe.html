@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../resources/CSS_Files/styles.css" />
+		<meta charset="UTF-8" />
+		<title>About Me</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="index.html">
+				<img
+					src="../resources/images/Logo.png"
+					alt="braden_Z"
+					display="inline" />
+			</a>
+			<nav class="navigation bar">
+				<ul>
+					<li>
+						<button onclick="window.location.href='index.html'">
+							<img
+								src="../resources/Icons/home-32.png"
+								alt="home"
+								display="inline" />
+							Home
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='album.html'">
+							<img
+								src="../resources/Icons/picture-32.png"
+								alt="picture"
+								display="inline" />
+							Photos
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='clubs.html'">
+							<img
+								src="../resources/Icons/club-32.png"
+								alt="club"
+								display="inline" />
+							Clubs
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='myMajors.html'">
+							<img
+								src="../resources/Icons/school-32.png"
+								alt="school"
+								display="inline" />
+							Education
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='resume.html'">
+							<img
+								src="../resources/Icons/paper-32.png"
+								alt="paper"
+								display="inline" />
+							CV
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='weblinks.html'">
+							<img
+								src="../resources/Icons/website-32.png"
+								alt="www"
+								display="inline" />
+							Weblinks
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='aboutMe.html'">
+							<img
+								src="../resources/Icons/person-32.png"
+								alt="person"
+								display="inline" />
+							About Me
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="layout_container">
+			<!--Side-Bar-->
+			<aside class="side-bar">
+				<!--FormSpree Form-->
+				<h3>Message Me</h3>
+				<form
+					id="form"
+					action="https://formspree.io/f/xjvnwojw"
+					method="POST">
+					<label>
+						Your email: <br />
+						<input
+							type="email"
+							name="email"
+							placeholder="email@example.com" /><br />
+					</label>
+
+					<label>
+						Your message: <br />
+						<textarea
+							name="message"
+							placeholder="example message"></textarea>
+						<br />
+					</label>
+					<button type="submit">Send</button> <br />
+				</form>
+
+				<hr />
+
+				<!--RSS FEED-->
+				<script type="text/javascript">
+					<!--
+					rssfeed_url = new Array();
+					rssfeed_url[0] =
+						'https://feeds.feedburner.com/TheHackersNews?format=xml';
+					rssfeed_frame_width = '95%';
+					rssfeed_frame_height = '440';
+					rssfeed_scroll = 'on';
+					rssfeed_scroll_step = '6';
+					rssfeed_scroll_bar = 'off';
+					rssfeed_target = '_blank';
+					rssfeed_font_size = '18';
+					rssfeed_border = 'on';
+					rssfeed_css_url =
+						'https://feed.surfing-waves.com/css/style1.css';
+					rssfeed_title = 'on';
+					rssfeed_title_name = '';
+					rssfeed_title_bgcolor = '#3366ff';
+					rssfeed_title_color = '#fff';
+					rssfeed_footer = 'off';
+					rssfeed_footer_name = 'rss feed';
+					rssfeed_footer_bgcolor = '#fff';
+					rssfeed_footer_color = '#333';
+					rssfeed_item_title_length = '50';
+					rssfeed_item_title_color = '#666';
+					rssfeed_item_bgcolor = '#fff';
+					rssfeed_item_border_bottom = 'on';
+					rssfeed_item_source_icon = 'off';
+					rssfeed_item_date = 'off';
+					rssfeed_item_description = 'on';
+					rssfeed_item_description_length = '120';
+					rssfeed_item_description_color = '#666';
+					rssfeed_item_description_link_color = '#333';
+					rssfeed_item_description_tag = 'off';
+					rssfeed_no_items = '0';
+					rssfeed_cache = '298faf7e0e5815b8a0349b7cc4dfa4c3';
+					//-->
+				</script>
+				<script
+					type="text/javascript"
+					src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+
+				<hr />
+
+				<!--Kanye West Quote-->
+				<div id="kanye_quote"></div>
+				<script>
+					try {
+						const div = document.getElementById('kanye_quote');
+						const url = 'https://api.kanye.rest';
+
+						const headers = new Headers({
+							Accept: 'application/json',
+						});
+
+						fetch(url, { headers })
+							.then((response) => {
+								return response.json();
+							})
+							.then((data) => {
+								console.log(data);
+								let p = document.createElement('p');
+								p.innerHTML = `${data.quote + ' - Kanye West'}`;
+								div.appendChild(p);
+							})
+							.catch(function (error) {
+								console.log(error);
+							});
+					} catch (error) {
+						console.error('Error caught in try-catch:', error);
+					}
+				</script>
+			</aside>
+			<!--Content Section-->
+			<section class="content">
+				<h2>About Me</h2>
+				<p>
+					My name is Braden Zaremba, I am a sophomore at Penn State
+					University where I am pursuing a bachelors degree in Cyber
+					Security Operations and Analytics with a course focus in
+					Application Development. In addition to pursuing my degree I
+					am also involved with the Competitive Cyber Security Club
+					(CCS0) on campus.
+				</p>
+				<p>
+					While I am firmly anchored in Cyber Security major I have a
+					strong passion for coding that bridges the gaps between my
+					professional, academic, and personal life.The blend of my
+					backround in Cyber Security and my passion for coding has
+					complemented each other in a way that has given me a much
+					deeper understanding of both fields, such as identifying a
+					SSH port being left open in a script designed to automate
+					the deployment of a company-wide computer update.
+				</p>
+				<p>
+					My programming experience has been primarily focused on Java
+					however I do have some experience with Python, SQL, HTML,
+					CSS, and JavaScript. One of my goals that I have set for
+					myself is to continue to expand my knowledge of programming
+					languages and to build a large GitHub page full of my
+					personal passion projects. My ambition for coding has led me
+					to want to pursue a career in the software development to
+					blend my passions for coding and cyber security.
+				</p>
+				<p>
+					Aside from my passion for coding my roots are still strongly
+					set in Cyber Security. I have a strong understanding of the
+					information security fields principles, tools, and concepts.
+					Some of the tools that I have used in my coursework include
+					Wireshark, Nmap, Metasploit, Spartan, Snort, and Kali Linux.
+					My current goal in the field of Cyber Security is to obtain
+					my CompTIA Security+ certification showing my ambition to
+					better myself and show my commitment to the field.
+				</p>
+				<p>
+					When I step away from my academics and personal projects I
+					like to immerse myself in playing video games, such as my
+					current favorite Baldur's Gate 3. If I am not playing a
+					video game them I am usually at one of the Penn State's
+					Hockey or Football games. In addition to my allegiance to my
+					school's sports teams I am also a big Baltimore Ravens.
+					While it may be a bit of a drive I try to make it a point to
+					see at least one game with my girlfriend every year.
+				</p>
+				<p>
+					In the future I hope to leverage my skills in both Cyber
+					Security and coding to work in the software development
+					industry. Where it is my dream to work as a software
+					engineer. Proving to myself that I can take my hobbies and
+					turn them into a profession where others may benefit from my
+					work. I am excited to see where my journey takes me and I am
+					looking forward to the challenges that I will face along the
+					way.
+				</p>
+			</section>
+		</div>
+		<footer class="footer">
+			<h3>Connect with me</h3>
+			<ul>
+				<li>
+					<!--LinkedIn-->
+					<a
+						href="https://www.linkedin.com/in/braden-zaremba-6abb74289">
+						<img
+							src="../resources/Icons/linkedin-32.png"
+							alt="linkedInLogo"
+							display="inline" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/braden-zaremba-6abb74289"
+						>LinkedIn</a
+					>
+				</li>
+				<li>
+					<!--Instagram-->
+					<a href="https://www.instagram.com/braden_zaremba/">
+						<img
+							src="../resources/Icons/instagram-32.png"
+							alt="instagramLogo"
+							display="inline" />
+					</a>
+					<a href="https://www.instagram.com/braden_zaremba/"
+						>Instagram</a
+					>
+				</li>
+				<li>
+					<!--Facebook-->
+					<a href="https://www.facebook.com/braden.zaremba">
+						<img
+							src="../resources/icons/facebook-32.png"
+							alt="facebook"
+							display="inline" />
+					</a>
+
+					<a href="https://www.facebook.com/braden.zaremba"
+						>Facebook</a
+					>
+				</li>
+				<li>
+					<!--GitHub-->
+					<a href="https://github.com/Massive-Z">
+						<img
+							src="../resources/icons/github-32.png"
+							alt="gitHubLogo"
+							display="inline" />
+					</a>
+					<a href="https://github.com/Massive-Z">GitHub</a>
+				</li>
+			</ul>
+			<p><br />©Copyright 2024 Braden Zaremba</p>
+		</footer>
+	</body>
+</html>

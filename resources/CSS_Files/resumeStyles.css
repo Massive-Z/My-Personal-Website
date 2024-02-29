@@ -1,0 +1,102 @@
+:root {
+	--min_width: 380px;
+	--max_width: calc(100% - 40px);
+
+	--outside_margin: 20px;
+	--outside_padding: 10px;
+}
+.content hr {
+	border: 2px solid var(--border_color);
+	margin: 0;
+}
+.about_me_container,
+.education_container,
+.relevant_skills_container,
+.experience_container,
+.personal_achievements_container,
+.clubs_and_orgs_container,
+.references_container {
+	h3 {
+		font-size: 40px;
+		margin: 5px;
+	}
+	p {
+		font-size: 20px;
+		margin: 5px;
+	}
+}
+.about_me_container {
+	h3 {
+		font-size: 60px;
+		margin: 5px;
+	}
+	#name {
+		font-size: 25px;
+		margin: 0px 0px 0px -10px;
+	}
+	p {
+		font-size: 20px;
+		margin: 5px;
+	}
+}
+.gpa {
+	text-align: right;
+	margin-left: auto;
+}
+.school_container {
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.experience_container,
+.personal_achievements_container {
+	ul li {
+		font-size: 20px;
+		padding: 0 20px 0 20px;
+		margin: 20px 0 20px 0;
+	}
+	ul li:before {
+		content: '-';
+	}
+}
+
+.resume_download_container {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+
+	button {
+		align-self: center;
+
+		display: block;
+		padding: 10px;
+		margin: 10px;
+
+		width: 15%;
+		min-width: 250px;
+
+		font-size: 30px;
+		font-weight: bold;
+
+		color: var(--background_color);
+		background-color: var(--button_background_color);
+
+		border: 4px solid var(--border_color);
+		border-radius: 10px;
+	}
+
+	button:hover {
+		background-color: var(--border_color);
+		border: 4px solid var(--total_background_color);
+
+		text-decoration: underline;
+
+		cursor: pointer;
+	}
+
+	p {
+		font-size: 15px;
+	}
+}

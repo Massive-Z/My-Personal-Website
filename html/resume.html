@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			rel="stylesheet"
+			href="../resources/CSS_Files/resumeStyles.css" />
+		<link
+			rel="stylesheet"
+			href="../resources/CSS_Files/styles.css" />
+		<meta charset="UTF-8" />
+		<title>Cirriculum Vitae</title>
+	</head>
+	<body>
+		<header class="header">
+			<a href="index.html">
+				<img
+					src="../resources/images/Logo.png"
+					alt="braden_Z"
+					display="inline" />
+			</a>
+			<nav class="navigation bar">
+				<ul>
+					<li>
+						<button onclick="window.location.href='index.html'">
+							<img
+								src="../resources/Icons/home-32.png"
+								alt="home"
+								display="inline" />
+							Home
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='album.html'">
+							<img
+								src="../resources/Icons/picture-32.png"
+								alt="picture"
+								display="inline" />
+							Photos
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='clubs.html'">
+							<img
+								src="../resources/Icons/club-32.png"
+								alt="club"
+								display="inline" />
+							Clubs
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='myMajors.html'">
+							<img
+								src="../resources/Icons/school-32.png"
+								alt="school"
+								display="inline" />
+							Education
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='resume.html'">
+							<img
+								src="../resources/Icons/paper-32.png"
+								alt="paper"
+								display="inline" />
+							CV
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='weblinks.html'">
+							<img
+								src="../resources/Icons/website-32.png"
+								alt="www"
+								display="inline" />
+							Weblinks
+						</button>
+					</li>
+					<li>
+						<button onclick="window.location.href='aboutMe.html'">
+							<img
+								src="../resources/Icons/person-32.png"
+								alt="person"
+								display="inline" />
+							About Me
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="layout_container">
+			<!--Side-Bar-->
+			<aside class="side-bar">
+				<!--FormSpree Form-->
+				<h3>Message Me</h3>
+				<form
+					id="form"
+					action="https://formspree.io/f/xjvnwojw"
+					method="POST">
+					<label>
+						Your email: <br />
+						<input
+							type="email"
+							name="email"
+							placeholder="email@example.com" /><br />
+					</label>
+
+					<label>
+						Your message: <br />
+						<textarea
+							name="message"
+							placeholder="example message"></textarea>
+						<br />
+					</label>
+					<button type="submit">Send</button> <br />
+				</form>
+
+				<hr />
+
+				<!--RSS FEED-->
+				<script type="text/javascript">
+					<!--
+					rssfeed_url = new Array();
+					rssfeed_url[0] =
+						'https://feeds.feedburner.com/TheHackersNews?format=xml';
+					rssfeed_frame_width = '95%';
+					rssfeed_frame_height = '440';
+					rssfeed_scroll = 'on';
+					rssfeed_scroll_step = '6';
+					rssfeed_scroll_bar = 'off';
+					rssfeed_target = '_blank';
+					rssfeed_font_size = '18';
+					rssfeed_border = 'on';
+					rssfeed_css_url =
+						'https://feed.surfing-waves.com/css/style1.css';
+					rssfeed_title = 'on';
+					rssfeed_title_name = '';
+					rssfeed_title_bgcolor = '#3366ff';
+					rssfeed_title_color = '#fff';
+					rssfeed_footer = 'off';
+					rssfeed_footer_name = 'rss feed';
+					rssfeed_footer_bgcolor = '#fff';
+					rssfeed_footer_color = '#333';
+					rssfeed_item_title_length = '50';
+					rssfeed_item_title_color = '#666';
+					rssfeed_item_bgcolor = '#fff';
+					rssfeed_item_border_bottom = 'on';
+					rssfeed_item_source_icon = 'off';
+					rssfeed_item_date = 'off';
+					rssfeed_item_description = 'on';
+					rssfeed_item_description_length = '120';
+					rssfeed_item_description_color = '#666';
+					rssfeed_item_description_link_color = '#333';
+					rssfeed_item_description_tag = 'off';
+					rssfeed_no_items = '0';
+					rssfeed_cache = '298faf7e0e5815b8a0349b7cc4dfa4c3';
+					//-->
+				</script>
+				<script
+					type="text/javascript"
+					src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+
+				<hr />
+
+				<!--Kanye West Quote-->
+				<div id="kanye_quote"></div>
+				<script>
+					try {
+						const div = document.getElementById('kanye_quote');
+						const url = 'https://api.kanye.rest';
+
+						const headers = new Headers({
+							Accept: 'application/json',
+						});
+
+						fetch(url, { headers })
+							.then((response) => {
+								return response.json();
+							})
+							.then((data) => {
+								console.log(data);
+								let p = document.createElement('p');
+								p.innerHTML = `${data.quote + ' - Kanye West'}`;
+								div.appendChild(p);
+							})
+							.catch(function (error) {
+								console.log(error);
+							});
+					} catch (error) {
+						console.error('Error caught in try-catch:', error);
+					}
+				</script>
+			</aside>
+			<!--Content Section-->
+			<section class="content">
+				<!--Content-->
+				<div class="cv_container">
+					<h2>Cirriculum Vitae</h2>
+					<div class="about_me_container">
+						<hr />
+						<h3>About Me</h3>
+						<hr />
+						<p id="name"><strong>Braden Zaremba</strong></p>
+						<p>Nanticoke, PA, 18634</p>
+						<p>(570) 855-0440 || braden.zar@outlook.com</p>
+					</div>
+					<div class="education_container">
+						<hr />
+						<h3>Education</h3>
+						<hr />
+						<div class="school_container">
+							<p>
+								<!--Penn State University-->
+								<strong>
+									In Progress Bachelor of Science in Cyber
+									Security Operations and Analytics
+								</strong>
+								(expected graduation of May 2026) | Penn State
+								University
+							</p>
+							<p class="gpa">
+								<strong
+									>3.0 in Major GPA || 2.6 Cumulative
+									GPA</strong
+								>
+							</p>
+						</div>
+						<div class="school_container">
+							<p>
+								<!--Greater Nanticoke Area High School-->
+								<strong>High School Diploma</strong> | Greater
+								Nanticoke Area High School
+							</p>
+							<p class="gpa">
+								<strong>3.4 GPA</strong>
+							</p>
+						</div>
+					</div>
+					<div class="relevant_skills_container">
+						<hr />
+						<h3>Relevant Skills</h3>
+						<hr />
+						<p>
+							<!--Programming Skills-->
+							<strong>Programming Skills:</strong>
+							Java, Python, SQL, JavaScript, HTML, CSS
+						</p>
+						<p>
+							<!--Computer Skills-->
+							<strong>Computer Skills:</strong>
+							Windows, Linux, Git, GitHub, Linux Terminal, Windows
+							PowerShell, Windows Command Prompt
+						</p>
+						<p>
+							<!--Tool Skills-->
+							<strong>Tool Skills:</strong>
+							Wireshark, Nmap, Metasploit, Spartan, Snort, Kali
+							Linux, John the Ripper, Microsoft Office, Visual
+							Studio Code, IntelliJ, WebStorm, MySQL Workbench,
+							VMware
+						</p>
+					</div>
+					<div class="experience_container">
+						<hr />
+						<h3>Experience</h3>
+						<hr />
+						<p>
+							<!--Walmart-->
+							<strong>Sales Associate | Walmart</strong>,
+							Wilkes-Barre, PA | May 2023 - Current
+						</p>
+						<ul class="work_description">
+							<li>
+								Managed inventory and collaborated with team
+								members to optimize stock organization,
+								fostering teamwork and attention to detail.
+							</li>
+							<li>
+								Utilized point-of-sale (POS) systems, showcasing
+								an aptitude for learning new technologies
+								quickly and accurately.
+							</li>
+						</ul>
+						<p>
+							<!--Weis Markets-->
+							<strong> Sales Associate | Weis Markets</strong>,
+							Nanticoke, PA | June 2021 - December 2022
+						</p>
+						<ul class="work_description">
+							<li>
+								Provided exceptional customer service, assisting
+								shoppers with inquiries, and locating products.
+							</li>
+							<li>
+								Collaborated with a diverse team of
+								approximately 30 associates, demonstrating
+								effective communication and teamwork skills.
+							</li>
+						</ul>
+					</div>
+					<div class="personal_achievements_container">
+						<hr />
+						<h3>Personal Achievements</h3>
+						<hr />
+						<ul>
+							<li>
+								Trusted to lead employees in the absence of
+								management, demonstrating strong leadership
+								skills.
+							</li>
+							<li>
+								Recognized for excellent customer service and
+								awarded Employee of the Month at Weis Markets.
+							</li>
+							<li>
+								Temporarily assumed unofficial department
+								manager duties at Weiss Markets.
+							</li>
+							<li>
+								Led a team of over 20 volunteers in a 4-month
+								school revitalization project
+							</li>
+						</ul>
+					</div>
+					<div class="clubs_and_orgs_container">
+						<hr />
+						<h3>Clubs and Organizations</h3>
+						<hr />
+						<p>
+							<strong
+								>Penn State Competitive Cyber Security
+								Organization:</strong
+							>
+							Online organization that allows students in mass to
+							participate in cyber security related competitions.
+						</p>
+					</div>
+					<div class="references_container">
+						<hr />
+						<h3>References</h3>
+						<hr />
+						<p>
+							Rigoberto Santos | Former Manager, Walmart | (570)
+							350-1145
+						</p>
+						<p>
+							Jonathan Kochanski | Sales Associate, Walmart |
+							(570) 902-9354
+						</p>
+					</div>
+					<div class="resume_download_container">
+						<button>
+							<img
+								src="../resources/Icons/dowload-32.png"
+								alt="download"
+								display="inline" />
+							<a
+								href="../resources/images/Zaremba Resume.pdf"
+								download="Zaremba Resume.pdf"
+								>Download
+							</a>
+						</button>
+						<p>(2/19/2024)</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<h3>Connect with me</h3>
+			<ul>
+				<li>
+					<!--LinkedIn-->
+					<a
+						href="https://www.linkedin.com/in/braden-zaremba-6abb74289">
+						<img
+							src="../resources/Icons/linkedin-32.png"
+							alt="linkedInLogo"
+							display="inline" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/braden-zaremba-6abb74289"
+						>LinkedIn</a
+					>
+				</li>
+				<li>
+					<!--Instagram-->
+					<a href="https://www.instagram.com/braden_zaremba/">
+						<img
+							src="../resources/Icons/instagram-32.png"
+							alt="instagramLogo"
+							display="inline" />
+					</a>
+					<a href="https://www.instagram.com/braden_zaremba/"
+						>Instagram</a
+					>
+				</li>
+				<li>
+					<!--Facebook-->
+					<a href="https://www.facebook.com/braden.zaremba">
+						<img
+							src="../resources/icons/facebook-32.png"
+							alt="facebook"
+							display="inline" />
+					</a>
+
+					<a href="https://www.facebook.com/braden.zaremba"
+						>Facebook</a
+					>
+				</li>
+				<li>
+					<!--GitHub-->
+					<a href="https://github.com/Massive-Z">
+						<img
+							src="../resources/icons/github-32.png"
+							alt="gitHubLogo"
+							display="inline" />
+					</a>
+					<a href="https://github.com/Massive-Z">GitHub</a>
+				</li>
+			</ul>
+			<p><br />©Copyright 2024 Braden Zaremba</p>
+		</footer>
+	</body>
+</html>

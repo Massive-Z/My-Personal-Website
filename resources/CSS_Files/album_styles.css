@@ -1,0 +1,20 @@
+:root {
+	--min_width: 380px;
+	--max_width: calc(100% - 40px);
+
+	--outside_margin: 20px;
+	--outside_padding: 10px;
+}
+.content .img_container {
+	column-count: 5;
+	column-width: 20%;
+	column-gap: 10px;
+
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-bottom: 10px;
+		break-inside: avoid-column;
+	}
+}
